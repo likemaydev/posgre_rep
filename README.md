@@ -1,20 +1,21 @@
-# posgre_rep
 
-=========================
-db-master - 10.128.0.18
-db-slave - 10.128.0.19
-=========================
+- db-master 10.128.0.18	
+- db-slave 10.128.0.19	 
 
-1. INSTALL POSTGRESQL
+
+# 1.INSTALL POSTGRESQL
 Master
-root@db-master:~# apt install pg-activity postgresql-contrib postgresql
+
+`root@db-master:~# apt install pg-activity postgresql-contrib postgresql`
 
 Slave
-root@db-slave:~# apt install pg-activity postgresql-contrib postgresql
 
-2. ADD DATA
+`root@db-slave:~# apt install pg-activity postgresql-contrib postgresql`
+
+# 2.ADD DATA
 Master
-postgres@db-master:~$ git clone https://github.com/morenoh149/postgresDBSamples.git
+
+`postgres@db-master:~$ git clone https://github.com/morenoh149/postgresDBSamples.git`
 postgres@db-master:~$ cd postgresDBSamples/french-towns-communes-francaises/
 postgres@db-master:~$ psql -d dz5 -f french-towns-communes-francaises.sql
 
