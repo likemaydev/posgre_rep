@@ -16,13 +16,13 @@ Slave
 Master
 
 `postgres@db-master:~$ git clone https://github.com/morenoh149/postgresDBSamples.git`
-postgres@db-master:~$ cd postgresDBSamples/french-towns-communes-francaises/
-postgres@db-master:~$ psql -d dz5 -f french-towns-communes-francaises.sql
+`postgres@db-master:~$ cd postgresDBSamples/french-towns-communes-francaises/`
+`postgres@db-master:~$ psql -d dz5 -f french-towns-communes-francaises.sql`
 
-postgres=# \c dz5;
+`postgres=# \c dz5;`
 You are now connected to database "dz5" as user "postgres".
 
-dz5=# select * from regions;
+`dz5=# select * from regions;`
  id | code | capital |            name
 ----+------+---------+----------------------------
   1 | 01   | 97105   | Guadeloupe
@@ -53,7 +53,7 @@ dz5=# select * from regions;
  26 | 94   | 2A004   | Corse
 (26 rows)
 
-dz5=# \q
+`dz5=# \q`
 
 3. CONFIGURE REPLICATION
 Master
